@@ -4,11 +4,26 @@
     O Template Method permite que as subclasses redefinam certos passos de um algoritmo
     sem alterar a estrutura do mesmo.
 */
-using TEMPLATE_METHOD.MODO_COMUM;
+using TEMPLATE_METHOD.MODO_PADRAO;
 
 var valor = 1000;
  Gateway gateway = new();
 
+//MODO_COMUM
+//  Console.WriteLine("Crédito");
+//  var pagamentoCredito = new PagamentoCredito(valor, gateway);
+//  pagamentoCredito.RealizarCobranca();
+
+// Console.WriteLine("Dédito");
+// var pagamentoDebito = new PagamentoDebito(valor, gateway);
+// pagamentoDebito.RealizarCobranca();
+
+// Console.WriteLine("Dinheiro");
+// var pagamentoDinheiro = new PagamentoDinheiro(valor, gateway);
+// pagamentoDinheiro.RealizarCobranca();
+
+
+//MODO_PADRAO
  Console.WriteLine("Crédito");
  var pagamentoCredito = new PagamentoCredito(valor, gateway);
  pagamentoCredito.RealizarCobranca();
