@@ -12,3 +12,4 @@
 /Users/alexandre/Documents/CURSOS/DESIGN-PATTERNS/COMPORTAMENTAIS/STRATEGY/obj/Debug/net9.0/STRATEGY.pdb
 /Users/alexandre/Documents/CURSOS/DESIGN-PATTERNS/COMPORTAMENTAIS/STRATEGY/obj/Debug/net9.0/STRATEGY.genruntimeconfig.cache
 /Users/alexandre/Documents/CURSOS/DESIGN-PATTERNS/COMPORTAMENTAIS/STRATEGY/obj/Debug/net9.0/ref/STRATEGY.dll
+/Users/alexandre/Documents/CURSOS/DESIGN-PATTERNS/COMPORTAMENTAIS/STRATEGY/obj/Debug/net9.0/STRATEGY.sourcelink.json
