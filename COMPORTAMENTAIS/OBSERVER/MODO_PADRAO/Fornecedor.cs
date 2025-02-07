@@ -1,4 +1,4 @@
-namespace OBSERVER.MODO_COMUM;
+namespace OBSERVER.MODO_PADRAO;
 
 
 public class Fornecedor : IObserver

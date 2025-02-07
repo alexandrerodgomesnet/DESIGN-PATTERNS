@@ -5,7 +5,7 @@
     todos seus dependentes são notificados e atualizados automaticamente.
 */
 
-using OBSERVER.MODO_COMUM;
+using OBSERVER.MODO_PADRAO;
 
 var newsletter = new Newsletter();
 
