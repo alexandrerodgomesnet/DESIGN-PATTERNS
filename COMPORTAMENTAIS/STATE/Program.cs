@@ -5,11 +5,17 @@
 */
 
 
-using STATE.MODO_COMUM;
+// using STATE.MODO_COMUM;
+
+// var pedido = new Pedido();
+// //pedido.DespacharPedido();
+
+// pedido.SucessoAoPagar();
+// //pedido.CancelarPedido();
+// pedido.DespacharPedido();
+
+using STATE.MODO_PADRAO;
 
 var pedido = new Pedido();
-//pedido.DespacharPedido();
-
-pedido.SucessoAoPagar();
-//pedido.CancelarPedido();
-pedido.DespacharPedido();
+pedido.RealizarPagamento();
+pedido.RealizarPagamento();
