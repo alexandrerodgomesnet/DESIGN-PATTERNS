@@ -1,22 +1,17 @@
-namespace FACTORY_METHOD.MODO_COMUM;
+namespace FACTORY_METHOD.MODO_PADRAO_1;
 
 public class BancoCaixa
 {
+    private readonly BoletoSimpleFactory _factory;
+
+    public BancoCaixa(BoletoSimpleFactory factory)
+    {
+        _factory = factory;
+    }
+
     public Boleto? GerarBoleto(int vencimentoBoleto, decimal valor)
     {
-        Boleto? boleto = null;
-        switch (vencimentoBoleto)
-        {
-            case 10:
-                boleto = new BancoCaixaBoleto10Dias(valor);
-            break;
-            case 30:
-                boleto = new BancoCaixaBoleto30Dias(valor);
-            break;
-            case 60:
-                boleto = new BancoCaixaBoleto60Dias(valor);
-            break;
-        }
+        Boleto? boleto = _factory.CriarBoleto(vencimentoBoleto, valor);
 
         Console.WriteLine($"Boleto gerado com sucesso no valor de R$ {valor}");
         Console.WriteLine($"Valor Juros: {boleto?.CalcularJuros()}%");
