@@ -30,21 +30,38 @@
 // Console.WriteLine(buiderA4.GetGeradorPdf());
 
 
-using BUILDER.MODO_PADRAO_2;
+// using BUILDER.MODO_PADRAO_2;
+// //criação pdf A3
+// Console.WriteLine("*********** PDF A3 **********");
+// var builderA3 = new BuilderA3(); 
+// builderA3.SetPageConfigurartion();
+// builderA3.SetMargin();
+// builderA3.SetHeader();
+// builderA3.SetFooter();
+// Console.WriteLine(builderA3.GetGeradorPdf());
+
+// //criação pdf A4
+// Console.WriteLine("*********** PDF A4 **********");
+// var buiderA4 = new BuilderA4();
+// buiderA4.SetPageConfigurartion();
+// buiderA4.SetMargin();
+// buiderA4.SetHeader();
+// buiderA4.SetFooter();
+// Console.WriteLine(buiderA4.GetGeradorPdf());
+
+
+using BUILDER.MODO_PADRAO_3;
+
 //criação pdf A3
 Console.WriteLine("*********** PDF A3 **********");
 var builderA3 = new BuilderA3(); 
-builderA3.SetPageConfigurartion();
-builderA3.SetMargin();
-builderA3.SetHeader();
-builderA3.SetFooter();
+var director = new GeradorPdfDirector(builderA3);
+director.CriarGeradorPdf();
 Console.WriteLine(builderA3.GetGeradorPdf());
 
 //criação pdf A4
 Console.WriteLine("*********** PDF A4 **********");
 var buiderA4 = new BuilderA4();
-buiderA4.SetPageConfigurartion();
-buiderA4.SetMargin();
-buiderA4.SetHeader();
-buiderA4.SetFooter();
+director.SetBuiderGeradorPdf(buiderA4);
+director.CriarGeradorPdf();
 Console.WriteLine(buiderA4.GetGeradorPdf());
