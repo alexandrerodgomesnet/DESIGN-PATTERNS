@@ -11,7 +11,7 @@ public class ListaIterator : IIterator<int>
         _lista = lista;
         _tamanho = _lista.Count;
     }
-    public bool hasNext() => _indice < _tamanho;
+    public bool HasNext() => _indice < _tamanho;
 
     public int Next()
     {

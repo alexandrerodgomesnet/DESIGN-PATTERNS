@@ -4,7 +4,7 @@ public static class ImpressoraAgregado<T>
 {
     public static void Iterar(IIterator<T> iterator)
     {
-        while (iterator.hasNext())
+        while (iterator.HasNext())
         {
             Console.WriteLine($"{iterator.Next()} ");            
         }

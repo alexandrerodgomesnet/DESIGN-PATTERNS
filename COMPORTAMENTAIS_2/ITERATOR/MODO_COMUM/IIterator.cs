@@ -2,6 +2,6 @@ namespace ITERATOR.MODO_COMUM;
 
 public interface IIterator<T>
 {
-    bool hasNext();
+    bool HasNext();
     T Next();
 }

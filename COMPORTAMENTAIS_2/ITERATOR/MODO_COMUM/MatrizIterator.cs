@@ -14,7 +14,7 @@ public class MatrizIterator : IIterator<int>
         _qtdeLinhas = _matriz.Count;
         _qtdeColunas = _matriz[0].Count;
     }
-    public bool hasNext() => _indiceLinha >= _qtdeLinhas ? false : true;
+    public bool HasNext() => _indiceLinha >= _qtdeLinhas ? false : true;
 
     public int Next()
     {
