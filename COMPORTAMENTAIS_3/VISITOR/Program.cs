@@ -4,3 +4,7 @@
     Ele permite definir uma nova operação sem mudar as classes 
     dos membros sobre quais opera.
 */
+
+using VISITOR.MODO_PADRAO;
+
+ModoPadrao.Run();
