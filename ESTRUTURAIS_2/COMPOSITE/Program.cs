@@ -5,6 +5,10 @@
     ou composições de objetos de maneira transparente e uniforme.
 */
 
-using COMPOSITE.MODO_COMUM;
+// using COMPOSITE.MODO_COMUM;
 
-ModoComum.Run();
+// ModoComum.Run();
+
+using COMPOSITE.MODO_PADRAO;
+
+ModoPadrao.Run();
