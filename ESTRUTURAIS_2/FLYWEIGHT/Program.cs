@@ -3,6 +3,10 @@
     grandes quantidades de objetos de granularidade fina.
 */
 
-using FLYWEIGHT.MODO_COMUM;
+// using FLYWEIGHT.MODO_COMUM;
 
-ModoComum.Run();
+// ModoComum.Run();
+
+using FLYWEIGHT.MODO_PADRAO;
+
+ModoPadrao.Run();
